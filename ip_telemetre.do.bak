@@ -1,0 +1,11 @@
+vlib work
+
+vcom -reportprogress 300 -work work C:/Users/3670068/Desktop/PROJET_1_CODESIGN/src/ip_telemetre.vhd 
+vcom -reportprogress 300 -work work C:/Users/3670068/Desktop/PROJET_1_CODESIGN/src/tb_ip_telemetre.vhd 
+
+vsim -gui work.tb_ip_telemetre
+
+view signals
+add wave *
+
+run 60 ms
